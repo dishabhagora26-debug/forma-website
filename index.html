@@ -1,0 +1,1282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR START ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+  <div class="container">
+
+    <a style="width: 20px;" class="navbar-brand fw-bold" href="#">Forma.</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      ☰
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto nav-underline">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+
+            <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+
+            <!-- Submenu -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">
+                Deep Dropdown
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Deep Dropdown 1</a></li>
+                <li><a class="dropdown-item" href="#">Deep Dropdown 2</a></li>
+                <li><a class="dropdown-item" href="#">Deep Dropdown 3</a></li>
+                <li><a class="dropdown-item" href="#">Deep Dropdown 4</a></li>
+                <li><a class="dropdown-item" href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li>
+
+            <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+      <button class="btn btn-primary">Get Started</button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-section d-flex align-items-center mt-4 ">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side -->
+                <div class="col-lg-7 mb-5 mb-lg-0 text-center text-lg-start ">
+                    <div class="badge-new mb-4 d-inline-block">
+                        <span>✨ New Feature Launch</span>
+                    </div>
+                    <h1 class="display-3 fw-bold text-white mb-4">Accelerate Your Business Growth</h1>
+                    <p style="font-size:18px;" class="lead text-secondary mb-5">Our powerful SaaS platform helps modern teams increase
+                        productivity by 40% and reduce operational costs. Join over 10,000+ companies already
+                        transforming their workflow.</p>
+
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#" class="btn btn-primary-custom px-4 py-3">Start Free Trial &rarr;</a>
+                        <a href="#"
+                            class="btn btn-outline-custom px-4 py-3 d-flex align-items-center justify-content-center gap-2">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                            </svg>
+                            Watch Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side (Graphics) -->
+                <div class="col-lg-5 position-relative text-center">
+                    <div class="main-graphic-container">
+                        <img style="width: 100%;margin-bottom:30px;margin-top: 20px;" src="image.png" >
+                    </div>
+
+
+                    <!-- Floating Cards -->
+                    <div class="floating-card card-revenue glass-effect p-2 d-flex align-items-center gap-2">
+                        <div class="icon-box bg-success-soft"><svg viewBox="0 0 24 24" fill="none" stroke="#4ade80"
+                                stroke-width="2">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg></div>
+                        <div class="text-start"><strong>+127%</strong><br><small>Revenue Growth</small></div>
+                    </div>
+
+                    <div class="floating-card card-users glass-effect p-2 d-flex align-items-center gap-2">
+                        <div class="icon-box bg-primary-soft"><svg viewBox="0 0 24 24" fill="none" stroke="#3b82f6"
+                                stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                            </svg></div>
+                        <div class="text-start"><strong>2.4k</strong><br><small>Active Users</small></div>
+                    </div>
+
+                    <div class="floating-card card-time glass-effect p-2 d-flex align-items-center gap-2">
+                        <div class="icon-box bg-warning-soft"><svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg></div>
+                        <div class="text-start"><strong>40%</strong><br><small>Time Saved</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-section">
+    <div class="container py-lg-5">
+        <div class="row align-items-center">
+             <!-- Left Side: Content -->
+            <div class="col-lg-6 ">
+                <button class="about-btn">About Us</button>
+                <h1 style="font-size: 35px;" class="display-4 fw-bold mb-4">We Build Digital Products That Drive Growth</h1>
+                <p style="font-size: 20px;" class="text-secondary mb-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+                <!-- Stats Grid -->
+                <div class="stats-container p-4 rounded-4 mb-5">
+                    <div class="row text-center">
+                        <div class="col-6 mb-4">
+                            <h2 class="text-primary fw-bold">150</h2>
+                            <small class="text-secondary">Projects Delivered</small>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <h2 class="text-primary fw-bold">85</h2>
+                            <small class="text-secondary">Happy Clients</small>
+                        </div>
+                        <div class="col-6">
+                            <h2 class="text-primary fw-bold">12</h2>
+                            <small class="text-secondary">Years Experience</small>
+                        </div>
+                        <div class="col-6">
+                            <h2 class="text-primary fw-bold">95</h2>
+                            <small class="text-secondary">Client Retention</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features List -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="icon-box me-3">
+                            <img style="width:100%;" src="energy.png" alt="">
+                        </div>
+                        <div>
+                            <h6 style="font-size: 20px;" class="mb-1">Fast Delivery</h6>
+                            <p style="font-size: 16px;" class="small text-secondary">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-5">
+                        <div class="icon-box me-3">
+                            <img style="width: 100%;" src="verified.png" alt="">
+                        </div>
+                        <div>
+                            <h6 style="font-size: 20px;" class="mb-1">Quality Assured</h6>
+                            <p style="font-size: 16px;" class="small text-secondary">Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="d-flex gap-3">
+                    <a href="#" class="btn btn-primary-custom px-4 py-3">Start Yur Project &rarr;</a>
+                        <a href="#"
+                            class="btn btn-outline-custom px-4 py-3 d-flex align-items-center justify-content-center gap-2">
+                                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                            </svg>
+                            View Portfolio
+                    </a>
+                </div>
+            </div>
+            <!-- Right Side: Image Composition -->
+            <div class="col-lg-6 mt-5 mt-lg-0">
+                <div class="image-wrapper position-relative">
+                    <!-- Main Big Image -->
+                    <img style="width: 75%;" src="image copy - Copy.png" class="img-fluid rounded-4 main-img shadow-lg" alt="Team">
+                    
+                    <!-- Small Overlapping Image -->
+                    <div class="small-img-container">
+                        <img src="image copy 2.png" class="img-fluid rounded-4 shadow-lg border border-dark border-4" alt="Meeting">
+                    </div>
+
+                    <!-- Award Badge -->
+                    <div class="award-badge d-flex align-items-center p-3 rounded-4 shadow">
+                        <div class="award-icon me-2">
+                            <img style="width:45px;" src="premium-badge.png" alt="">
+                        </div>
+                        <div>
+                            <p class="m-0 fw-bold small text-white">Award Winning</p>
+                            <span class="text-secondary extra-small">Digital Agency 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="services-section py-5">
+        <div class="container">
+
+            <!-- TOP CENTER -->
+            <div class="text-center mb-5">
+                <span class="badge bg-primary bg-opacity-25 text-primary px-3 py-2 rounded-pill">
+                    SERVICES
+                </span>
+                <h2 class="mt-3 fw-bold">
+                    Check Our <span class="text-primary">Services</span>
+                </h2>
+            </div>
+
+            <!-- BOTTOM CONTENT -->
+            <div class="row align-items-center">
+                <div class="col-md-6 text-start">
+                    <h3 style="font-size: 33px;" class="fw-bold mb-3">Comprehensive Digital Solutions</h3>
+                    <p style="font-size: 15px;" class="text-secondary mb-0">
+                        We deliver end-to-end digital services that drive growth, enhance user experience, and 
+                        transform your business vision into reality.
+                    </p>
+                </div>
+
+                <!-- RIGHT LINK -->
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a style="font-size: 18px;" href="#" class="view-link">
+                        View All Services →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cards -->
+    <section class="services py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- CARD 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 h-100">
+                        <div class="icon mb-3"><img src="paint-palette.png" style="width:30px;"></div>
+                        <h5>Brand Identity Design</h5>
+                        <p>Craft engaging mobile experiences with native and cross-platform designs that users love to interact with daily.</p>
+                        <ul>
+                            <li>Logo & Visual Identity</li>
+                            <li>Brand Guidelines</li>
+                            <li>Marketing Materials</li>
+                        </ul>
+                        <a href="#">Explore Service →</a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 h-100">
+                        <div class="icon mb-3"><img src="laptop.png" style="width:30px;"></div>
+                        <h5>UI/UX Design</h5>
+                        <p>Design intuitive, user-centered interfaces that enhance engagement and deliver exceptional digital experiences.</p>
+                        <ul>
+                            <li>User Research</li>
+                            <li>Wireframing</li>
+                            <li>Interaction Design</li>
+                        </ul>
+                        <a href="#">Explore Service →</a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 h-100">
+                        <div class="icon mb-3"><img src="settings.png" style="width:30px;"></div>
+                        <h5>Web Development</h5>
+                        <p>Build fast, scalable, and secure web applications using cutting-edge technologies and best development practices.</p>
+                        <ul>
+                            <li>Custom Websites</li>
+                            <li>E-commerce</li>
+                            <li>API Integration</li>
+                        </ul>
+                        <a href="#">Explore Service →</a>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 h-100">
+                        <div class="icon mb-3"><img src="smartphone.png" style="width:30px;"></div>
+                        <h5>Mobile App Design</h5>
+                        <p>Craft engaging mobile experiences with native and cross-platform designs that users love to interact with daily.</p>
+
+                        <ul>
+                            <li>iOS & Android</li>
+                            <li>Cross Platform</li>
+                            <li>Optimization</li>
+                        </ul>
+
+                        <a href="#">Explore Service →</a>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 h-100">
+                        <div class="icon mb-3"><img src="communication (3).png" style="width:30px;"></div>
+                        <h5>Digital Marketing</h5>
+                        <p>Drive measurable results with data-driven marketing strategies that increase visibility and convert prospects into customers.</p>
+
+                        <ul>
+                            <li>Social Media</li>
+                            <li>Content Strategy</li>
+                            <li>PPC Campaigns</li>
+                        </ul>
+
+                        <a href="#">Explore Service →</a>
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4 h-100">
+                        <div class="icon mb-3"><img src="search.png" style="width:30px;"></div>
+                        <h5>SEO Optimization</h5>
+                        <p>Improve search rankings and organic traffic with comprehensive SEO strategies tailored to your business goals.</p>
+                        <ul>
+                            <li>SEO Audit</li>
+                            <li>Keyword Research</li>
+                            <li>Link Building</li>
+                        </ul>
+                        <a href="#">Explore Service →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--section 1-->
+    <section class="cta-section py-5">
+        <div class="container">
+
+            <div class="cta-box">
+                <div class="row align-items-center">
+
+                    <!-- LEFT CONTENT -->
+                    <div class="col-lg-7 text-white text-center text-lg-start">
+                        <span class="badge-custom mb-3 d-inline-block">
+                            READY TO START?
+                        </span>
+
+                        <h3 style="font-size: 30px;" class="fw-bold mb-2">
+                            Transform Your Digital Presence Today
+                        </h3>
+
+                        <p style="font-size: 15.3px;" class="mb-0 text-white">
+                            Partner with us to create innovative solutions that drive real business results.
+                            Let's build something extraordinary together.
+                        </p>
+                    </div>
+
+                    <!-- RIGHT BUTTONS -->
+                    <div class="col-lg-5 text-center text-lg-end mt-4 mt-lg-0">
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-end">
+                            <a href="#" class="btn btn-light px-4">
+                                Get Started →
+                            </a>
+                            <a href="#" class="btn btn-outline-light px-4 ">
+                                Schedule Consultation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--6 cards-->
+    <div class="container text-center mt-5">
+        <span class="section-tag">PORTFOLIO</span>
+        <h2 style="font-size: 30px;" class="mt-3 fw-bold display-5">Check Our Portfolio</h2>
+
+        <!-- Filters -->
+        <div class="d-flex justify-content-center flex-wrap mt-4">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Web Development</button>
+            <button class="filter-btn">Mobile Apps</button>
+            <button class="filter-btn">Branding</button>
+            <button class="filter-btn">UI/UX Design</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row g-3 mt-4">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-card">
+                    <div class="img-container">
+                        <span class="featured-badge">Featured</span>
+                        <img src="portfolio-1.webp" alt="Work">
+                    </div>
+                    <div class="card-body">
+                        <div class="category-text"><span>WEB DEVELOPMENT</span> <span>2024</span></div>
+                        <h3 class="card-title">Enterprise Analytics Dashboard</h3>
+                        <p class="card-desc">Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis
+                            porttitor volutpat.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Node.js</span>
+                        </div>
+                        <a href="#" class="view-link">View Case Study &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-card">
+                    <div class="img-container">
+                        <img src="portfolio-3.webp" alt="Work">
+                    </div>
+                    <div class="card-body">
+                        <div class="category-text"><span>MOBILE APPS</span> <span>2024</span></div>
+                        <h3 class="card-title">Fitness Tracking Application</h3>
+                        <p class="card-desc">Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="tech-badge">Flutter</span>
+                            <span class="tech-badge">Firebase</span>
+                            <span class="tech-badge">ML Kit</span>
+                        </div>
+                        <a href="#" class="view-link">View Case Study &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-card">
+                    <div class="img-container">
+                        <span class="featured-badge" style="background: #a855f7;">Award Winner</span>
+                        <img src="portfolio-5.webp" alt="Work">
+                    </div>
+                    <div class="card-body">
+                        <div class="category-text"><span>BRANDING</span> <span>2023</span></div>
+                        <h3 class="card-title">Tech Startup Brand Identity</h3>
+                        <p class="card-desc">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="tech-badge">Illustrator</span>
+                            <span class="tech-badge">Figma</span>
+                            <span class="tech-badge">After Effects</span>
+                        </div>
+                        <a href="#" class="view-link">View Case Study &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="row g-4">
+          <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-card">
+                    <div class="img-box">
+                        <img src="portfolio-4.webp" alt="Project">
+                    </div>
+                    <div class="card-content">
+                        <div class="meta"><span>UI/UX DESIGN</span> <span>2024</span></div>
+                        <h3>Cloud-Based SaaS Platform</h3>
+                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+                        <div class="tags">
+                            <span class="badge-tag">Figma </span>
+                            <span class="badge-tag">Prototyping</span>
+                            <span class="badge-tag">Design System</span>
+                        </div>
+                        <a href="#" class="view-link">View Case Study &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 (With Featured Badge) -->
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-card">
+                    <div class="img-box">
+                        <span class="featured-label">FEATURED</span>
+                        <img src="portfolio-7.webp" alt="Project">
+                    </div>
+                    <div class="card-content">
+                        <div class="meta"><span>WEB DEVELOPMENT</span> <span>2024</span></div>
+                        <h3>Multi-Vendor E-commerce</h3>
+                        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                        <div class="tags">
+                            <span class="badge-tag">React Name</span>
+                            <span class="badge-tag">Biometrics</span>
+                            <span class="badge-tag">Secuery API</span>
+                        </div>
+                        <a href="#" class="view-link">View Case Study &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-card">
+                    <div class="img-box">
+                        <img src="portfolio-2.webp" alt="Project">
+                    </div>
+                    <div class="card-content">
+                        <div class="meta"><span>MOBILE APPS</span> <span>2024</span></div>
+                        <h3>Digital Banking Solution</h3>
+                        <p>Donec sollicitudin molestie malesuada. Curabitur arcu erat, accumsan id imperdiet et.</p>
+                        <div class="tags">
+                            <span class="badge-tag">Flutter</span>
+                            <span class="badge-tag">Biometrics</span>
+                            <span class="badge-tag">GraphQL</span>
+                        </div>
+                        <a href="#" class="view-link">View Case Study &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Portfolio Grid -->
+        <div class="row g-4 mb-5">
+            <!-- Card 7 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-card">
+                    <div class="img-box">
+                        <img src="portfolio-9.webp" alt="Project">
+                    </div>
+                    <div class="card-content">
+                        <div class="meta"><span>WEB DEVELOPMENT</span> <span>2024</span></div>
+                        <h3>Property Listing Platform</h3>
+                        <p>Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh.</p>
+                        <div class="tags">
+                            <span class="badge-tag">Vue.js</span>
+                            <span class="badge-tag">Spotify</span>
+                            <span class="badge-tag">GraphQL</span>
+                        </div>
+                        <a href="#" class="view-link">View Case Study &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-card">
+                    <div class="img-box">
+                        <img src="portfolio-8.webp" alt="Project">
+                    </div>
+                    <div class="card-content">
+                        <div class="meta"><span>BRANDING</span> <span>2023</span></div>
+                        <h3>Restaurant Chain Rebrand</h3>
+                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+                        <div class="tags">
+                            <span class="badge-tag">Brand Strategy</span>
+                            <span class="badge-tag">Print Design</span>
+                            <span class="badge-tag">Packaging</span>
+                        </div>
+                        <a href="#" class="view-link">View Case Study &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-card">
+                    <div class="img-box">
+                        <img src="portfolio-6.webp" alt="Project">
+                    </div>
+                    <div class="card-content">
+                        <div class="meta"><span>UI/UX DESIGN</span> <span>2023</span></div>
+                        <h3>Patient Management Portal</h3>
+                        <p>Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada.</p>
+                        <div class="tags">
+                            <span class="badge-tag">Sketch</span>
+                            <span class="badge-tag">InVision</span>
+                            <span class="badge-tag">User Testing</span>
+                        </div>
+                        <a href="#" class="view-link">View Case Study &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section (Blue Banner) -->
+        <div class="cta-banner d-flex flex-column flex-md-row align-items-center justify-content-between">
+            <div class="cta-text text-center text-md-start mb-4 mb-md-0">
+                <h2>Have a project in mind?</h2>
+                <p style="font-size:16px;" class="mb-0">Let's collaborate to create something exceptional. Our team is ready to bring your
+                    digital vision to life.</p>
+            </div>
+            <a href="#" class="btn-dark-custom ">Start Your Project</a>
+        </div>
+    </div>
+
+<section class="section-wrapper">
+        <div class="container">
+            <div class="text-center mb-5 mt-4">
+                <span class="badge-main">WHY US</span>
+                <h2 class="fw-bold">Why <span class="text-primary">Choose Us</span></h2>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <span class="badge-main">Why Choose Us</span>
+                    <h1 class="main-title">Partner with a Team That Delivers Real Results</h1>
+                    <p style="font-size:17px;" class="sub-text">
+                        We don't just create digital experiences—we build solutions that drive measurable growth. Our data-driven approach combines creativity with performance to help your business thrive in the digital landscape.
+                    </p>
+
+                    <div class="row">
+                        <div class="col-4 col-md-4 stat-item">
+                            <div class="stat-number">150</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="col-4 col-md-4 stat-item">
+                            <div class="stat-number">98</div>
+                            <div class="stat-label">% Client Retention</div>
+                        </div>
+                        <div class="col-4 col-md-4 stat-item">
+                            <div class="stat-number">250</div>
+                            <div class="stat-label">% Avg ROI Increase</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 illustration-container">
+                    <img style="width: 100%;" src="image copy.png">
+                </div>
+            </div>
+        </div>
+
+    <!--thred-->
+    <div class="container py-5 mt-5">
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="service-card">
+                    <div class="mb-3 text-primary"><img src="thunder.png" style="width: 70px;"></div>
+                    <h5>Fast Turnaround</h5>
+                    <p class="small text-secondary">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
+                    <a href="#" class="text-decoration-none small">Learn more →</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card card-active">
+                    <span class="popular-badge">Most Popular</span>
+                    <div class="mb-3 text-primary"><img src="growth-analytics.png" style="width: 70px;"></div>
+                    <h5>Data-Driven Strategy</h5>
+                    <p class="small text-secondary">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam.</p>
+                    <a href="#" class="text-decoration-none small">Learn more →</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <div class="mb-3 text-primary"><img src="security.png" style="width: 70px;"></div>
+                    <h5>Proven Expertise</h5>
+                    <p class="small text-secondary">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni.</p>
+                    <a href="#" class="text-decoration-none small">Learn more →</a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="row align-items-center py-5">
+          <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-delay="200">
+            <div class="capabilities-content">
+              <h3>Our Core Capabilities</h3>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+
+              <div class="capability-list">
+                <div class="capability-item">
+                  <div class="capability-header">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <h5>Strategic Planning &amp; Consulting</h5>
+                  </div>
+                  <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
+                </div>
+
+                <div class="capability-item">
+                  <div class="capability-header">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <h5>Custom Development Solutions</h5>
+                  </div>
+                  <p>Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime.</p>
+                </div>
+
+                <div class="capability-item">
+                  <div class="capability-header">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <h5>Ongoing Support &amp; Optimization</h5>
+                  </div>
+                  <p>Itaque earum rerum hic tenetur a sapiente delectus ut aut reiciendis voluptatibus maiores alias.</p>
+                </div>
+              </div>
+
+              <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">Start Your Project</a>
+                <a href="#" class="btn btn-secondary">View Case Studies</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-delay="300">
+            <div class="process-visual">
+              <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                  <h6>Discovery</h6>
+                  <p>Understanding your goals</p>
+                </div>
+              </div>
+              <div class="process-step" data-aos="fade-up" data-aos-delay="450">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                  <h6>Strategy</h6>
+                  <p>Planning the approach</p>
+                </div>
+              </div>
+              <div class="process-step" data-aos="fade-up" data-aos-delay="500">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                  <h6>Execution</h6>
+                  <p>Bringing ideas to life</p>
+                </div>
+              </div>
+              <div class="process-step" data-aos="fade-up" data-aos-delay="550">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                  <h6>Optimization</h6>
+                  <p>Continuous improvement</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Why Us Section -->
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section ">
+    <div class="container">
+      <!-- Heading -->
+      <div class="text-center mb-3">
+      <div class="text-center mb-2">
+                <span class="badge-main">TESTIMONIALS</span>
+            </div>
+        <h2 style="font-weight: 700;" class="about-title mt-3">Check Our <span style="color:#3a7bd5;">Testimonials</span></h2>
+      </div>
+      <!-- Carousel -->
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row align-items-center g-5">
+              <div class="col-lg-7">
+                <h4 class="testi-quote-title">Nemo enim ipsam voluptatem</h4>
+                <p class="testi-text mt-3" style="color: white;">
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa. </p>
+                <p class="testi-text">
+                  <em style="color: white;">Dolorem excepturi esse qui amet maxime quibusdam aut repellendus voluptatum.
+                    Corrupti enim a repellat cumque est laborum fuga consequuntur. Dolorem nostrum deleniti quas
+                    voluptatem iure dolorum rerum. Repudiandae doloribus ut repellat harum vero aut. Modi aut velit
+                    aperiam aspernatur odit ut vitae.</em>
+                </p>
+                <div class="d-flex align-items-center mt-4">
+                  <img src="image copy 5.png" class="testi-avatar me-3" alt="Matt Brandon" />
+                  <div>
+                    <strong class="d-block text-white">Sara Wilsson</strong>
+                    <small class="text">Designer</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 text-center">
+                <img src="image copy 5.png" class="testi-main-img rounded-4" alt="Matt Brandon" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row align-items-center g-5">
+              <div class="col-lg-7">
+                <h4 class="testi-quote-title">Sed ut perspiciatis unde omnis</h4>
+                <p class="testi-text mt-3" style="color: white;">
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. </p>
+                <p class="testi-text" style="color: white;">
+                  <em>Beatae magnam dolore quia ipsum. Voluptatem totam et qui dolore dignissimos. Amet quia sapiente
+                    laudantium nihil illo et assumenda sit cupiditate. Nam perspiciatis perferendis minus consequatur.
+                    Enim ut eos quo.</em>
+                </p>
+                <div class="d-flex align-items-center mt-4">
+                  <img src="image copy 3.png" class="testi-avatar me-3" alt="Sara Williams" />
+                  <div>
+                    <strong class="d-block text-white">Saul Goodman</strong>
+                    <small class="text">Client</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 text-center">
+                <img src="image copy 3.png" class="testi-main-img rounded-4" alt="Sara Williams" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="row align-items-center g-5">
+              <div class="col-lg-7">
+                <h4 class="testi-quote-title">Labore nostrum eos impedit</h4>
+                <p class="testi-text mt-3">
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
+                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                </p>
+                <p class="testi-text">
+                  <em>Itaque ut explicabo vero occaecati est quam rerum sed. Numquam tempora aut aut quaerat quia illum.
+                    Nobis quia autem odit ipsam numquam. Doloribus sit sint corporis eius totam fuga. Hic nostrum
+                    suscipit corrupti nam expedita adipisci aut optio.</em>
+                </p>
+                <div class="d-flex align-items-center mt-4">
+                  <img src="image copy 4.png" class="testi-avatar me-3" alt="John Carter" />
+                  <div>
+                    <strong class="d-block text-white">Matt Brandon</strong>
+                    <small class="text">Freelancer</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 text-center">
+                <img src="image copy 4.png" class="testi-main-img rounded-4" alt="John Carter" />
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Slide 4 -->
+          <div class="carousel-item">
+            <div class="row align-items-center g-5">
+              <div class="col-lg-7">
+                <h4 class="testi-quote-title">Impedit dolor facilis nulla</h4>
+                <p class="testi-text mt-3" style="color: white;">
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
+                  tempor labore quem eram duis noster aute amet eram fore quis sint minim. </p>
+                <p class="testi-text" style="color: white;">
+                  <em>Omnis aspernatur accusantium qui delectus praesentium repellendus. Facilis sint odio aspernatur
+                    voluptas commodi qui qui qui pariatur. Corrupti deleniti itaque quaerat ipsum deleniti culpa tempora
+                    tempore. Et consequatur exercitationem hic aspernatur nobis est voluptatibus architecto
+                    laborum.</em>
+                </p>
+                <div class="d-flex align-items-center mt-4">
+                  <img src="image copy 6.png" class="testi-avatar me-3" alt="Sara Williams"/>
+                  <div>
+                    <strong class="d-block text-white">Jena Karlis</strong>
+                    <small class="text">Store Owner</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 text-center">
+                <img src="image copy 6.png" class="testi-main-img rounded-4" alt="Sara Williams"/>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</section>
+
+
+<!-- Controls -->
+        <div class="testi-controls mt-5 d-flex justify-content-center gap-3">
+          <button class="testi-btn" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="testi-btn" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+
+        <section class="team-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="badge-team">TEAM</span>
+      <h2 class="section-main-title mt-2">Check Our <span class="text-blue">Team</span></h2>
+    </div>
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <div>
+    <h3 class="team-sub-title mb-0">Our Professional Team</h3>
+    <div class="team-underline mt-2 mb-3"></div>
+    <p class="team-header-desc mb-0">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus nec ullamcorper mattis pulvinar dapibus leo.
+    </p>
+  </div>
+  
+  <div class="d-flex gap-2">
+    <button class="nav-btn" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+    <button class="nav-btn" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+  </div>
+</div>
+
+    <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+       <div style="background-color: #21252900;" class="carousel-item active">
+          <div class="row g-1">
+            <div class="col-lg-3 col-md-6">
+              <div class="team-card">
+                <div class="img-container">
+                  <img src="person-m-8.webp" alt="Daniel Chen">
+                  <div class="team-social">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="team-card-body">
+                  <h6 class="team-name">Daniel Chen</h6>
+                  <p class="team-role">Marketing Specialist</p>
+                  <p class="team-desc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="team-card">
+                <div class="img-container">
+                  <img src="person-f-9.webp" alt="Olivia Thompson">
+                  <div class="team-social">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="team-card-body">
+                  <h6 class="team-name">Olivia Thompson</h6>
+                  <p class="team-role">Lead Developer</p>
+                  <p class="team-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="team-card">
+                <div class="img-container">
+                  <img src="person-m-12.webp" alt="Jason Parker">
+                  <div class="team-social">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="team-card-body">
+                  <h6 class="team-name">Jason Parker</h6>
+                  <p class="team-role">UI/UX Designer</p>
+                  <p class="team-desc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="team-card">
+                <div class="img-container">
+                  <img src="person-f-8.webp" alt="Emily Rodriguez">
+                  <div class="team-social">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="team-card-body">
+                  <h6 class="team-name">Emily Rodriguez</h6>
+                  <p class="team-role">Project Manager</p>
+                  <p class="team-desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background-color:#21252900;" class="carousel-item">
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="team-card">
+                <div class="img-container">
+                  <img src="person-m-3.webp" alt="Ryan Foster">
+                  <div class="team-social">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="team-card-body">
+                  <h6 class="team-name">Ryan Foster</h6>
+                  <p class="team-role">Backend Developer</p>
+                  <p class="team-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="team-card">
+                <div class="img-container">
+                  <img src="https://i.pravatar.cc/300?img=44" alt="Emma Davis">
+                  <div class="team-social">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="team-card-body">
+                  <h6 class="team-name">Emma Davis</h6>
+                  <p class="team-role">SEO Specialist</p>
+                  <p class="team-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="team-card">
+                <div class="img-container">
+                  <img src="img 1.jpg" alt="James Lee">
+                  <div class="team-social">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="team-card-body">
+                  <h6 class="team-name">James Lee</h6>
+                  <p class="team-role">App Developer</p>
+                  <p class="team-desc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="team-card">
+                <div class="img-container">
+                  <img src="person-f-5.webp" alt="Sophia Reynolds">
+                  <div class="team-social">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="team-card-body">
+                  <h6 class="team-name">Sophia Reynolds</h6>
+                  <p class="team-role">Product Designer</p>
+                  <p class="team-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
+
+
+<div class="container py-4">
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+        <span class="badge rounded-pill bg-primary bg-opacity-10 text-primary px-3 py-2 mb-3">CONTACT</span>
+        <h1 class="display-5 fw-bold">Need Help? <span class="text-primary">Contact Us</span></h1>
+    </div>
+
+    <div class="row g-5">
+        <!-- Left Side: Content & Info -->
+        <div class="col-lg-6">
+            <div class="mb-4">
+                <p class="text-primary fw-bold small mb-2"><i class="fas fa-rocket me-2"></i> LET'S BUILD SOMETHING AMAZING</p>
+                <h2 class="fw-bold mb-4">Ready to Transform Your Digital Presence?</h2>
+                <p class="text-secondary">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+
+            <!-- Contact Info Rows -->
+            <div class="d-grid gap-3">
+                <!-- Email -->
+                <div class="contact-card d-flex align-items-start gap-3">
+                    <div class="icon-box"><img src="mail-inbox-app (1).png" style="width: 100%;"></div>
+                    <div>
+                        <h6 class="mb-1 fw-bold">Email</h6>
+                        <p class="mb-0 text-white small">hello@example.com</p>
+                        <small class="muted">We reply within 24 hours</small>
+                    </div>
+                </div>
+                <!-- Phone -->
+                <div class="contact-card d-flex align-items-start gap-3">
+                    <div class="icon-box"><img src="telephone (11).png" style="width: 100%;"> </div>
+                    <div>
+                        <h6 class="mb-1 fw-bold">Phone</h6>
+                        <p class="mb-0 text-light small">+1 (555) 234-5678</p>
+                        <small class="muted">Mon-Fri, 9AM-6PM EST</small>
+                    </div>
+                </div>
+                <!-- Office -->
+                <div class="contact-card d-flex align-items-start gap-3">
+                    <div class="icon-box"><img src="placeholder (7).png" style="width: 100%;margin-left: 10px;"></div>
+                    <div>
+                        <h6 class="mb-1 fw-bold">Office</h6>
+                        <p class="mb-0 text-light small">5632 Market Street, San Francisco, CA 94102</p>
+                        <small class="muted">Visit us anytime</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Row -->
+            <div style="padding:10px 20px;background:#f0f8ff1a;border-radius:15px;" class="row text-center mt-5 pt-3 pb-3 border-top border-secondary border-opacity-25">
+                <div class="col-4">
+                    <div class="stats-text">2.5k+</div>
+                    <small class="muted text-uppercase" style="font-size: 0.7rem;">Happy Clients</small>
+                </div>
+                <div class="col-4">
+                    <div class="stats-text">4.9/5</div>
+                    <small class="muted text-uppercase" style="font-size: 0.7rem;">Client Rating</small>
+                </div>
+                <div class="col-4">
+                    <div class="stats-text">15min</div>
+                    <small class="muted text-uppercase" style="font-size: 0.7rem;">Avg Response</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Form -->
+        <div class="col-lg-6">
+            <div class="contact-card h-100 shadow-lg">
+                <h3 class="fw-bold mb-2">Start Your Project</h3>
+                <p class="text-secondary small mb-4">Tell us about your project and we'll get back to you with a tailored solution.</p>
+                
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label text-secondary small">Full Name</label>
+                        <input type="text" class="form-control py-2" placeholder="Full Name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-secondary small">Email Address</label>
+                        <input type="email" class="form-control py-2" placeholder="email@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-secondary small">Subject</label>
+                        <input type="text" class="form-control py-2" placeholder="Subject">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label text-secondary small">Message</label>
+                        <textarea class="form-control" rows="4" placeholder="How can we help?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 mb-3">
+                        Send Message <i class="fas fa-paper-plane ms-2"></i>
+                    </button>
+                    <p class="text-center muted small mb-0">
+                        <i class="fas fa-shield-alt me-1"></i> Your information is secure and will never be shared.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-section">
+    <div class="container text-white">
+        <div class="row g-4">
+            
+            <!-- Column 1: Brand Info -->
+            <div class="col-lg-5 col-md-6 ">
+                <h2 class="footer-title">Forma</h2>
+                <p class="pe-lg-5" style="font-size:17px; line-height: 1.6;">
+                    Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.
+                </p>
+                <div class="social-links mt-4">
+                    <a href="#"><img src="twitter (16).png" style="width: 26px;"></a>
+                    <a href="#"><img src="facebook (16).png"style="width: 28px;"></a>
+                    <a href="#"><img src="instagram (11).png" style="width: 28px;"></a>
+                    <a href="#"><img src="linkedin (2).png" style="width: 28px;"></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Useful Links -->
+            <div class="col-lg-2 col-md-6 footer-links">
+                <h5 class="footer-link-title">Useful Links</h5>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Our Services -->
+            <div class="col-lg-2 col-md-6 footer-links">
+                <h5 class="footer-link-title">Our Services</h5>
+                <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Product Management</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Us -->
+            <div class="col-lg-3 col-md-6 text-white">
+                <h5 class="footer-link-title">Contact Us</h5>
+                <p class="text-white mb-1 small">A108 Adam Street</p>
+                <p class="text-white mb-1 small">New York, NY 535022</p>
+                <p class="text-white mb-3 small">United States</p> 
+                <p class="text-white mb-1 small"><strong class="text-white">Phone:</strong> +1 5589 55488 55</p>
+                <p class="text-white small"><strong class="text-white">Email:</strong> info@example.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="copyright-bar text-center">
+        <div class="container">
+            <p class="mb-0 text-secondary small text-white ">
+                &copy; Copyright <b>Forma</b> Rights Reserved<br>
+                Designed by <small style="color:blue;">BootstrapMade</small>
+            </p>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
